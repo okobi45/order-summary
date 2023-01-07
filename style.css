@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 
@@ -24,4 +25,16 @@ body {
 .orderImage img {
     width: 400px;
     border-radius: 20px 20px 0px 0px;
+}
+
+.orderContent {
+    text-align: center;
+}
+
+.orderContent h2 {
+    font-size: 18px;
+}
+
+.orderContent p {
+    font-size: 12px;
 }
