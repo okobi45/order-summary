@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      display: grid;
+      width: 80vw;
+      margin: auto;
+      grid-gap: 50px;
+      justify-content: center;
+      /* grid-template-columns: 200px 200px 200px; */
+      grid-template-rows: 200px 300px 100px;
+      border: 2px solid rgb(240, 205, 108);
+    }
 
     .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border: 1px solid red;
-      height: 200px;
-      width: 200px;
-      position: absolute;
+      padding: 15px;
     }
 
     #one {
-      background-color: red;
-      top: 100px;
-      left: 150px;
-      z-index: 1;
+      
     }
 
     #two {
-      background-color: yellow;
-      top: 80px;
-      left: 100px;
-      z-index: -1;
+      
     }
-
   </style>
 </head>
+
 <body>
 
   <!-- Order Summary
@@ -50,16 +64,12 @@
 
   Proceed to Payment
   Cancel Order -->
-  
-  <div id="one" class="box">
-    <h1>This is just for entertainment</h1>
-  </div>
-  <div id="two" class="box">
-    <h1>This is just for entertainment</h1>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+
+  <div class="container">
+    <div class="box" id="one">box 1</div>
+    <div class="box" id="one">box 2</div>
+    <div class="box" id="one">box 3</div>
   </div>
 </body>
+
 </html>
