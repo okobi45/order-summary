@@ -21,32 +21,45 @@
       color: hsl(228, 45%, 44%);
     }
 
-    .container {
+    .grid-container {
       display: grid;
-      width: 80vw;
-      margin: auto;
-      grid-gap: 50px;
-      justify-content: center;
-      /* grid-template-columns: 200px 200px 200px; */
-      grid-template-rows: 200px 300px 100px;
-      border: 2px solid rgb(240, 205, 108);
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: 100px 200px;
+      grid-row-gap: 10px;
     }
 
-    .box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid red;
-      padding: 15px;
+    .grid-item {
+      border: 1px solid blue;
     }
 
-    #one {
+    .grid-item-1 {
       
+    }
+
+    .grid-item-2 {
+      
+    }
+
+    .grid-item-3 {
+      
+    }
+
+    .grid-item-4 {
+      
+    }
+     
+
+    /* #one {
+      grid-area: bottomLeft;
     }
 
     #two {
-      
+      grid-area: top;
     }
+
+    #three {
+      grid-area: bottomRight;
+    } */
   </style>
 </head>
 
@@ -65,10 +78,15 @@
   Proceed to Payment
   Cancel Order -->
 
-  <div class="container">
-    <div class="box" id="one">box 1</div>
-    <div class="box" id="one">box 2</div>
-    <div class="box" id="one">box 3</div>
+  <div class="grid-container">
+    <div class="grid-item grid-item-1">Grid 1</div>
+    <div class="grid-item grid-item-2">Grid 2</div>
+    <div class="grid-item grid-item-3">Grid 3</div>
+    <div class="grid-item grid-item-4">Grid 4</div>
+    <!-- <div class="sidebar box">Sidebar</div>
+    <div class="aside box">Aside</div>
+    <div class="main box">Main</div>
+    <div class="footer box">Footer</div> -->
   </div>
 </body>
 
